@@ -1,57 +1,57 @@
-# redux-store-app
-
 # 22 State Homework: Redux Store
 
 ## Your Task
 
 In this unit, i learned how to manage global state using React’s Context API. The Context API is quickly gaining traction as a worthy alternative or perhaps even successor to other libraries that manage global state in tandem with React, such as Flux or MobX. Nonetheless, the open source JavaScript library Redux remains the industry standard for managing complex state in a large-scale React application, and you’ll likely encounter it on the job.
 
-This week challenge is to refactor the e-commerce platform from [Activity 26](../01-Activities/26-Stu_Actions-Reducers/Unsolved) so that it uses [Redux](https://redux.js.org/). Some guidelines have been provided in the Getting Started section to point you in the right direction. If you haven't yet, download the [e-commerce platform code from Activity 26](http://static.fullstack-bootcamp.com/fullstack-ground/unit-22/26-Stu_Actions-Reducers.zip).
+![book-search-engine-demo](./images/demo/demo.gif)
 
-**On the Job**: Web developers frequently have to immerse themselves in a new technology to solve a problem, with only that tool’s documentation for help. They must sift through it to find the information that matches the specific problem they’re trying to solve. This assignment will allow you to practice a skill that you’ll use many times over the course of your career.
-
-
-## User Story
-
+## Overview
+my challenge this week is to refactor the e-commerce platform from [Activity 26](../01-Activities/26-Stu_Actions-Reducers/Unsolved) so that it uses [Redux](https://redux.js.org/). I did not need to make sweeping changes to the code, I used some guidelines  that have been provided in the Getting Started section to point you in the right direction. If you haven't yet, download the [e-commerce platform code from Activity 26](http://static.fullstack-bootcamp.com/fullstack-ground/unit-22/26-Stu_Actions-Reducers.zip).
 ```md
 AS a senior engineer working on an e-commerce platform
 I WANT my platform to use Redux to manage global state instead of the Context API
 SO THAT my website's state management is taken out of the React ecosystem
-```
 
-## Acceptance Criteria
+## Table of Contents
+ - [Pseudocode](#pseudocode)  
+ - [Installation](#installation) 
+ - [Usage](#usage) 
+ - [Links](#links)
+ - [Screenshot](#screenshot)
 
-```md
-GIVEN an e-commerce platform that uses Redux to manage global state
-WHEN I review the app’s store
-THEN I find that the app uses a Redux store instead of the Context API
-WHEN I review the way the React front end accesses the store
-THEN I find that the app uses a Redux provider
-WHEN I review the way the app determines changes to its global state
-THEN I find that the app passes reducers to a Redux store instead of using the Context API
-WHEN I review the way the app extracts state data from the store
-THEN I find that the app uses Redux instead of the Context API
-WHEN I review the way the app dispatches actions
-THEN I find that the app uses Redux instead of the Context API
-```
+## Pseudocode
+1. GIVEN an e-commerce platform that uses Redux to manage global state
+2. WHEN I review the app’s store
+3. THEN I find that the app uses a Redux store instead of the Context API
+4. WHEN I review the way the React front end accesses the store
+5. THEN I find that the app uses a Redux provider
+6. WHEN I review the way the app determines changes to its global state
+7. THEN I find that the app passes reducers to a Redux store instead of using the Context API
+8. WHEN I review the way the app extracts state data from the store
+9. THEN I find that the app uses Redux instead of the Context API
+10. WHEN I review the way the app dispatches actions
+11. THEN I find that the app uses Redux instead of the Context API
 
-## Mock-Up
+## Installation
+-  ```npm i```
 
-This section reviews the web application's general appearance and functionality.
+## Usage
+- ```npm run develop``` to start the server.
 
-The following animation shows how a user can register using the Signup page and then navigate to the Products page:
+## Resources
+- [Apollo GraphQL](https://www.apollographql.com/docs/)
+- [Mutations](https://www.apollographql.com/docs/react/data/mutations/)
+- [Queries](https://www.apollographql.com/docs/react/data/queries/)
+- [Redux Fundamentals basic tutorial](https://redux.js.org/basics/basic-tutorial).
+- [e-commerce platform code from Activity 26](http://static.fullstack-bootcamp.com/fullstack-ground/unit-22/26-Stu_Actions-Reducers.zip)
 
-![A user registers on the Signup page and then navigates to the Products page, which displays images and descriptions of products.](./Assets/22-state-homework-demo-01.gif) 
+## Links
+- [Repository](https://github.com/aaron-might/redux-store-app)
+- [Deployed Site](https://intense-lake-52708.herokuapp.com//)
 
-The following animation shows how the user can select a category, choose a product, view details about it on the product page, and add and remove it from their shopping cart:
+## Screenshot
 
-![The user selects a category, chooses a product, views details about it on the product page, and adds it to and removes it from their shopping cart.](./Assets/22-state-homework-demo-02.gif)
-
-Finally, the user can check out by going to their shopping cart, as shown in the following animation:
-
-
-* Repository contains high-quality README file with description, screenshot, and link to the deployed application.
-
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+![Google Book Search Desktop](./images/payment-processing.png)
+![Google Book Search Desktop](./images/product-categories.png)
+![Google Book Search Desktop](./images/product-menu.png)
